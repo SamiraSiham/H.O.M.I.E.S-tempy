@@ -62,7 +62,6 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
             PermissionFlagsBits.AddReactions,
             PermissionFlagsBits.AttachFiles,
             PermissionFlagsBits.CreateInstantInvite,
-            PermissionFlagsBits.KickMembers,
             PermissionFlagsBits.UseSoundboard,
             PermissionFlagsBits.Stream,
             PermissionFlagsBits.UseVAD,
@@ -71,6 +70,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
             PermissionFlagsBits.UseExternalEmojis,
             PermissionFlagsBits.UseExternalStickers,
           ],
+          deny: [PermissionFlagsBits.ManageChannels],
         },
       ],
     });
